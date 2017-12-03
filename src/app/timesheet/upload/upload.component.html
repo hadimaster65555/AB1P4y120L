@@ -1,0 +1,171 @@
+<br>
+<div class="row col-md-12">
+  <h3>
+    <b>TIME SHEET UPLOAD</b>
+  </h3>
+  <span class="label label-info">(TS-001)</span>
+</div>
+
+<!-- SPACE -->
+<div class="col-md-12" style="height:59px;"></div>
+
+<form action="" class="form-horizontal">
+  <div class="form-row col-md-12">
+    <div class="form-group col-md-6 form-inline">
+      <label for="timesheetModel" class="col-md-5 control-label">Timesheet Model</label>
+      <div class="col-md-7">
+        <select id="timesheetModel" class="form-control" style="width:211px">
+          <option selected disabled>Choose</option>
+          <option>...</option>
+        </select>
+        <a class="btn" role="button">
+          <span class="glyphicon glyphicon-search"></span>
+        </a>
+      </div>
+    </div>
+
+    <div class="form-group col-md-6 form-inline">
+      <div class="col-xs-12">
+        <label class="file-upload btn btn-info ">
+          <input type="file" />
+        </label>
+        <span class="glyphicon glyphicon-upload" aria-hidden="true"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SPACE -->
+  <div class="col-md-12" style="height:49px;"></div>
+
+  <div class="form-row col-md-12 text-center">
+    <button type="button" class="btn btn-primary">UPLOAD</button>
+  </div>
+</form>
+
+<!-- SPACE -->
+<div class="col-md-12" style="height:29px;"></div>
+
+<br>
+<div class="row col-md-12">
+  <h3>
+    <b>VALIDATION</b>
+  </h3>
+</div>
+
+<!-- SPACE -->
+<div class="col-md-12" style="height:29px;"></div>
+
+<form action="" class="form-horizontal">
+  <div class="form-row col-md-12">
+    <div class="form-group col-md-6 form-inline">
+      <label for="period" class="col-md-5 control-label">Period</label>
+      <div class="col-md-7">
+        <input type="text" class="form-control" id="period" placeholder="Period">
+      </div>
+    </div>
+
+    <div class="form-group col-md-6 form-inline">
+      <label for="group" class="col-md-5 control-label">Group</label>
+      <div class="col-md-7">
+        <select id="group" class="form-control" style="width:211px">
+          <option selected disabled>Choose</option>
+          <option>...</option>
+        </select>
+        <a class="btn" role="button">
+          <span class="glyphicon glyphicon-search"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-row col-md-12">
+    <div class="form-group col-md-6 form-inline">
+      <label for="employeeId" class="col-md-5 control-label">Employee ID</label>
+      <div class="col-md-7">
+        <input type="text" class="form-control" id="employeeId" placeholder="Employee ID">
+        <a class="btn" role="button">
+          <span class="glyphicon glyphicon-search"></span>
+        </a>
+      </div>
+    </div>
+
+    <div class="form-group col-md-6 form-inline">
+      <label for="workingSchedule" class="col-md-5 control-label">Working Schedule</label>
+      <div class="col-md-7">
+        <select id="workingSchedule" class="form-control" style="width:211px">
+          <option selected disabled>Choose</option>
+          <option>...</option>
+        </select>
+        <a class="btn" role="button">
+          <span class="glyphicon glyphicon-search"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-row col-md-12">
+    <div class="form-group col-md-6 form-inline">
+      <label for="name" class="col-md-5 control-label">Name</label>
+      <div class="col-md-7">
+        <input type="text" class="form-control" id="name" placeholder="Name">
+      </div>
+    </div>
+
+    <div class="form-group col-md-6 form-inline">
+      <label for="project" class="col-md-5 control-label">Project</label>
+      <div class="col-md-7">
+        <select id="project" class="form-control" style="width:211px">
+          <option selected disabled>Choose</option>
+          <option>...</option>
+        </select>
+        <a class="btn" role="button">
+          <span class="glyphicon glyphicon-search"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+</form>
+
+<!-- SPACE -->
+<div class="col-md-12" style="height:39px;"></div>
+
+<table class="table table-striped table-bordered">
+  <thead>
+    <tr>
+      <th class="text-center">Date</th>
+      <th class="text-center">Working Type</th>
+      <th class="text-center">All Day</th>
+      <th class="text-center">In</th>
+      <th class="text-center">Out</th>
+      <th class="text-center">Remark</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="text-center">1</td>
+      <td>
+        <input type="checkbox" value="" /> On Shore &nbsp;
+        <input type="checkbox" value="" /> Office &nbsp;
+        <input type="checkbox" value="" /> Business Trip &nbsp;
+        <input type="checkbox" value="" /> Other &nbsp;
+        <br>
+        <input type="checkbox" value="" /> Off Shore &nbsp;
+        <input type="checkbox" value="" /> Training &nbsp;
+        <input type="checkbox" value="" /> CDO &nbsp;
+      </td>
+      <td class="text-center">
+        <input type="checkbox" id="allDay" value="1" />
+      </td>
+      <td class="text-center">
+        <input id="in" class="timepicker" type="text" placeholder="HH:MM" style="width:100px">
+      </td>
+      <td class="text-center">
+        <input id="out" class="timepicker" type="text" placeholder="HH:MM" style="width:100px">
+      </td>
+      <td class="text-center">
+        <input id="remark" type="text" placeholder="Text" style="width:250px">
+      </td>
+    </tr>
+  </tbody>
+</table>

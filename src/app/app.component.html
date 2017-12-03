@@ -1,1 +1,34 @@
 <router-outlet></router-outlet>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">ABI Payroll</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Grouping<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">List</a></li>
+          <li><a href="#">Create</a></li>
+          <li><a href="#">Employee</a></li>
+        </ul>
+
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">TimeSheet<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#" routerLink="/generate">Generate</a></li>
+          <li><a href="#" routerLink="/entry">Entry</a></li>
+          <li><a href="#" routerLink="/upload">Upload</a></li>
+        </ul>
+
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Leave<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#" routerLink="/type">Type</a></li>
+          <li><a href="#" routerLink="/request-form">Request Form</a></li>
+          <li><a href="#" routerLink="/validation-list">Validation List</a></li>
+          <li><a href="#" routerLink="/validation">Validation</a></li>
+          <li><a href="#" routerLink="/approval">Approval</a></li>
+        </ul>
+      </li>
+      <li><a routerLink="calculation">Payroll</a></li>
+    </ul>
+  </div>
+</nav>
