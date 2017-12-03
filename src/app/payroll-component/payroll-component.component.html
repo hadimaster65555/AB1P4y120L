@@ -1,0 +1,153 @@
+<div class="container">
+<h1>Komponen Payroll</h1>
+  <div class="row">
+    <div class="col-md-6">
+      <h4>Overtime</h4>
+      <table class="table table-striped">
+        <thead style="background-color: #b6bac1">
+          <tr>
+            <td>Code</td>
+            <td>Payroll Component</td>
+            <td>Recurring</td>
+            <td>Value</td>
+            <td>Tax Object</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>OT</td>
+            <td>Overtime</td>
+            <td>Hours</td>
+            <td>NumberHours X BS</td>
+            <td> </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <h4>Offshore Allowance</h4>
+      <table class="table table-striped">
+        <thead style="background-color: #b6bac1">
+          <tr>
+            <td>Code</td>
+            <td>Payroll</td>
+            <td>Recurring</td>
+            <td>Value</td>
+            <td>Tax Object</td>
+          </tr>
+        </thead>
+        <tr>
+          <td>OFAL 1</td>
+          <td>Offshore Allowance 1</td>
+          <td>Days</td>
+          <td>(22.5 x BS)/30</td>
+          <td> </td>
+        </tr>
+      </table>
+      <br>
+      <h4>Onshore Allowance</h4>
+      <table class="table table-striped">
+        <thead style="background-color: #b6bac1">
+          <tr>
+            <td>Code</td>
+            <td>Payroll</td>
+            <td>Recurring</td>
+            <td>Value</td>
+            <td>Tax Object</td>
+          </tr>
+        </thead>
+        <tr>
+          <td>ONAL 1</td>
+          <td>Onshore Allowance 1</td>
+          <td>Days</td>
+          <td>0.1 x NumDays x BS</td>
+          <td> </td>
+        </tr>
+      </table>
+      <br>
+      <h4>THR</h4>
+      <table class="table table-striped">
+        <thead style="background-color: #b6bac1">
+          <tr>
+            <td>Code</td>
+            <td>Payroll</td>
+            <td>Recurring</td>
+            <td>Value</td>
+            <td>Tax Object</td>
+          </tr>
+        </thead>
+        <tr>
+          <td>THR1</td>
+          <td>THR Full</td>
+          <td>Years</td>
+          <td>1 x BS</td>
+          <td>
+              <input type="checkbox" name="thr1" id="thr1">
+              <label for="thr1"></label>
+          </td>
+        </tr>
+        <tr>
+            <td>THR2</td>
+            <td>THR Prorate</td>
+            <td>Years</td>
+            <td>(work period/12) x BS</td>
+            <td> 
+                <input type="checkbox" name="thr2" id="thr2">
+                <label for="thr2"></label>                
+            </td>
+          </tr>
+      </table>
+    </div>
+    <div class="col-md-6">
+      <form action="#" method="post" id="payroll-component">
+        <div class="row">
+          <div class="form-group form-inline">
+            <label for="name" class="col-md-2">Name</label>
+            <input type="text" name="name" id="name" placeholder="John Doe" class="form-control col-md-2">
+          </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="form-group form-inline">
+                <label for="recurring" class="col-md-2">Recurring</label>
+                <select name="recurring" id="recurring" class="form-control col-md-2">
+                  <option value="Hour">Hour</option>
+                  <option value="Week">Week</option>
+                  <option value="Month">Month</option>
+                  <option value="Year">Year</option>
+                </select>
+              </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="form-group form-inline">
+            <label for="formula" class="col-md-2">Formula</label>
+            <div class="col-md-10">
+              Number of
+              <select name="formula" id="formula" class="form-control">
+                <option value="Hour">Hour</option>
+                <option value="Week">Week</option>
+                <option value="Month">Month</option>
+                <option value="Year">Year</option>
+              </select>
+              X
+              <input type="number" placeholder="0.75" class="form-control" style="width: 100px"/>
+              X
+              <select name="formula" id="formula" class="form-control">
+                <option value="Basic Salary">Basic Salary</option>
+                <option value="...">...</option>
+                <option value="...">...</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="form-group form-inline">
+            <label for="taxObject" class="col-md-2">Tax Object</label>
+            <input type="checkbox" name="taxObject" id="taxObject" class="form-control col-md-2"/>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

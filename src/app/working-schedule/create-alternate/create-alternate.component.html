@@ -1,0 +1,81 @@
+<div class="container">
+    <h1>Working Schedule</h1>
+    <br>
+    <form action="#" method="post" id="createWorkingSchedule">
+      <div class="row">
+        <div class="form-group form-inline">
+          <label for="name" class="col-md-1">Nama</label>
+          <input style="width: 250px" type="text" name="name" id="name" class="form-control col-md-3"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-3">
+            <input type="checkbox" name="flatCalendar" id="flatCalendar">
+            <label for="flatCalendar">Flat Calendar</label>
+            <input type="checkbox" name="ignoreHoliday" id="ignoreHoliday">
+            <label for="ignoreHoliday">Ignore Holiday</label>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="form-group form-inline">
+          <label for="onDate" class="col-md-1">On Date</label>
+          From
+              <select name="onDate" id="onDate" form="createWorkingSchedule" class="form-control">
+                <option value="1">Sunday</option>
+                <option value="2">Monday</option>
+                <option value="3">Tuesday</option>
+                <option value="4">Wednesday</option>
+                <option value="5">Thursday</option>
+              </select>
+            To
+            <select name="onDate" id="onDate" form="createWorkingSchedule" class="form-control">
+                <option value="1">Sunday</option>
+                <option value="2">Monday</option>
+                <option value="3">Tueday</option>
+                <option value="4">Wednesday</option>
+                <option value="5">Thursday</option>
+              </select>
+              <a class="btn btn-default" role="button"><span class="glyphicon glyphicon-plus"></span></a>
+        </div>
+      </div>
+      <div class="row">
+          <div class="form-group form-inline">
+            <label for="offDate" class="col-md-1">Off Date</label>
+                From
+                <select name="onDate" id="offDate" form="createWorkingSchedule" class="form-control">
+                  <option value="1">Sunday</option>
+                  <option value="2">Monday</option>
+                  <option value="3">Tuesday</option>
+                  <option value="4">Wednesday</option>
+                  <option value="5">Thusrday</option>
+                </select>
+              To
+              <select name="onDate" id="offDate" form="createWorkingSchedule" class="form-control">
+                  <option value="1">Sunday</option>
+                  <option value="2">Monday</option>
+                  <option value="3">Tuesday</option>
+                  <option value="4">Wednesday</option>
+                  <option value="5">Thursday</option>
+                </select>
+                <a class="btn btn-default" role="button"><span class="glyphicon glyphicon-plus"></span></a>
+          </div>
+        </div>
+        <div class="row">
+            <div class="form-group form-inline">
+              <label for="workingTime" class="wol-md-1">Working Time</label>
+              From
+              <input placeholder="00:00" style="width: 125px" type="text" pattern="^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$" name="workingTime" class="form-control" id="workingTime"/>
+              To
+              <input placeholder="00:00" style="width: 125px" type="text" pattern="^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$" name="workingTime" class="form-control" id="workingTime"/>            
+              <a class="btn btn-default" role="button"><span class="glyphicon glyphicon-plus"></span></a>
+            </div>
+          </div>
+    <br>
+    <div class="col s12 center">
+        <button type="reset" class="btn btn-danger">CANCEL</button>
+        <button type="submit" class="btn btn-primary">SUBMIT</button>
+    </div>
+    </form>
+  </div>

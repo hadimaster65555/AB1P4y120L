@@ -1,0 +1,343 @@
+<div class="container">
+    <h2>Group</h2>
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active"><a data-toggle="tab" href="#menu1">List Group</a></li>
+      <li role="presentation"><a data-toggle="tab" href="#menu2">Create Group</a></li>
+      <li role="presentation"><a data-toggle="tab" href="#menu3">Employee</a></li>
+    </ul>
+  
+    <div class="tab-content">
+      <div role="tabpanel" id="menu1" class="tab-pane active">
+        <br>  
+        <table class="table table-striped">
+              <thead style="background-color: #b6bac1">
+                <tr>
+                  <td>Group Name</td>
+                  <td>Working Schedule</td>
+                  <td>Working Status</td>
+                  <td>Project</td>
+                  <td>Number of Employee</td>
+                  <td>Action</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>G001X</td>
+                  <td>15-16A</td>
+                  <td>Onshore</td>
+                  <td>Hero</td>
+                  <td>10</td>
+                  <td><a class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></a> - <a class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span></a></td>
+                </tr>
+                <tr>
+                  <td>G002Y</td>
+                  <td>1-31 B</td>
+                  <td>Onshore</td>
+                  <td>Hero</td>
+                  <td>20</td>
+                  <td><a class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></a> - <a class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span></a></td>
+                </tr>
+                <tr>
+                  <td>G003X</td>
+                  <td>15-16 B</td>
+                  <td>Offshore</td>
+                  <td>Hero</td>
+                  <td>5</td>
+                  <td><a class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></a> - <a class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span></a></td>
+                </tr>
+                <tr>
+                  <td>G004X</td>
+                  <td>5-2 A</td>
+                  <td>Office</td>
+                  <td>Hero</td>
+                  <td>25</td>
+                  <td><a class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></a> - <a class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span></a></td>
+                </tr>
+                <tr>
+                  <td>G005Z</td>
+                  <td>15-16 Z</td>
+                  <td>Offshore</td>
+                  <td>Oil 234</td>
+                  <td>30</td>
+                  <td><a class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></a> - <a class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span></a></td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <a href="#" class="btn btn-primary">Create</a>
+      </div>
+      
+      
+      <div id="menu2" class="tab-pane fade">
+        <br>
+        <form action="" method="post" id="listForm">
+          <div class="row">
+              <div class="form-group form-inline">
+                  <label for="groupName" class="col-md-2">Group Name</label>
+                  <input type="text" name="groupName" id="groupName" class="form-control col-md-2"/>
+              </div>
+            </div>
+            <br>
+          <div class="row">
+            <div class="form-group form-inline">
+                <label for="Working Group" class="col-md-2">Working Schedule</label>
+                <select name="workingSchedule" id="workingSchedule" class="form-control col-md-2">
+                    <option value="15-16A">15-16A</option>
+                    <option value="1-31 B">1-31 B</option>
+                    <option value="15-16 B">15-16 B</option>
+                    <option value="5-2 A">5-2 A</option>
+                    <option value="15-16 Z">15-16 Z</option>
+                </select>
+                <a class="btn" role="button"><span class="glyphicon glyphicon-search"></span></a>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="form-group form-inline">
+              <label for="project" class="col-md-2">Project</label>
+              <select name="project" id="project" id="listForm" class="form-control col-md-2">
+                  <option value="Hero Service">Hero Service</option>
+                  <option value="Civil Service">Civil Service</option>
+              </select>
+              <a class="btn" role="button"><span class="glyphicon glyphicon-search"></span></a>
+            </div>
+          </div>
+          <br>
+          <div class="row container">
+            <div class="form-group">
+              <label for="payrollComponents">Payroll Components</label>
+              <div class="form-inline">
+                  <select name="payrollComponents" id="payrollComponents" id="listForm" class="form-control col-md-2">
+                    <option value="Onshore">Remote Allowance</option>
+                    <option value="Offshore Allowance">Offshore Allowance</option>
+                    <option value="Overtime">Overtime</option>
+                    <option value="THR">THR</option>
+                  </select>
+                  <a class="btn" role="button"><span class="glyphicon glyphicon-search"></span></a>
+                  <a class="btn" role="button"><span class="glyphicon glyphicon-plus"></span></a>
+              </div>
+            </div>
+          </div>
+          <table class="table table-striped">
+            <thead style="background-color: #b6bac1">
+              <tr>
+                    <td>Payroll Components</td>
+                    <td>Recurring</td>
+                    <td>Value</td>
+                    <td>Tax Object</td>
+                    <td>Action</td>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                    <td>Offshore Allowance</td>
+                    <td>Monthly</td>
+                    <td>22.5%</td>
+                    <td>Yess</td>
+                    <td><a class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></a></td>
+                  </tr>
+                  <tr>
+                    <td>Overtime</td>
+                    <td>Hour</td>
+                    <td>0.75</td>
+                    <td>Yess</td>
+                    <td><a class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></a></td>
+                  </tr>
+                  <tr>
+                    <td>THR</td>
+                    <td>Year</td>
+                    <td>1</td>
+                    <td>Yess</td>
+                    <td><a class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></a></td>
+                  </tr>
+                </tbody>
+              </table>
+              <br>
+              <div class="row container">
+                <div class="form-group">
+                    <label for="workingType">Working Type</label>
+                    <div class="form-inline">
+                      <select name="workingType" id="workingType" class="form-control">
+                        <option value="Offshore">Offshore</option>
+                        <option value="Onshore">Onshore</option>
+                        <option value="Offshore Allowance">Offshore Allowance</option>
+                        <option value="Office">Office</option>
+                        <option value="Training">Training</option>
+                        <option value="Business Trip">Business Trip</option>
+                      </select>
+                      <a class="btn" role="button"><span class="glyphicon glyphicon-search"></span></a>
+                      <a class="btn" role="button"><span class="glyphicon glyphicon-plus"></span></a>
+                  </div>
+                </div>
+                <table class="table table-striped">
+                  <thead style="background-color: #b6bac1">
+                    <tr>
+                      <td>Working Type</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Onshore</td>
+                    </tr>
+                    <tr>
+                      <td>Offshore Allowance</td>
+                    </tr>
+                    <tr>
+                      <td>Office</td>
+                    </tr>
+                    <tr>
+                      <td>Training</td>
+                    </tr>
+                    <tr>
+                      <td>Business Trip</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <br>
+              <button type="submit" class="btn btn-primary">SUBMIT</button>
+          </form>
+          <br>
+          <br>
+      </div>
+
+      <div id="menu3" class="tab-pane fade">
+        <br>
+        <form action="" method="post">
+          <div class="row">
+              <div class="col-md-6">
+                <div class="row">
+                    <div class="form-group form-inline">
+                        <label for="groupName" class="col-md-4">Group Name</label>
+                        <select name="groupName" id="groupName" class="form-control col-md-2">
+                          <option value="G001x">G001x</option>
+                          <option value="...">...</option>
+                        </select>
+                        <a class="btn" role="button"><span class="glyphicon glyphicon-search"></span></a>
+                      </div>
+                </div>
+                <div class="row">
+                    <div class="form-group form-inline">
+                        <label for="workingSchedule" class="col-md-4">Working Schedule</label>
+                        <p class="form-control-static col-md-4">15-16 A</p>
+                      </div>
+                </div>
+                <div class="row">
+                    <div class="form-group form-inline">
+                        <label for="workingStatus" class="col-md-4">Working Status</label>
+                        <p class="form-control-static col-md-4">Onshore</p>
+                      </div>
+                </div>
+                <div class="row">
+                    <div class="form-group form-inline">
+                        <label for="project" class="col-md-4">Project</label>
+                        <p class="form-control-static col-md-4">Hero Service</p>
+                      </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+              <h3>Payroll Components</h3>
+              <table class="table table-striped">
+                <thead style="background-color: #b6bac1">
+                  <tr>
+                    <td>Payroll Component</td>
+                    <td>Recurring</td>
+                    <td>Value</td>
+                    <td>Tax Object</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Offshore Alowance</td>
+                    <td>Monthly</td>
+                    <td>22.5%</td>
+                    <td>Yield</td>
+                  </tr>
+                  <tr>
+                    <td>Overtime</td>
+                    <td>Hour</td>
+                    <td>0.75</td>
+                    <td>Yess</td>
+                  </tr>
+                  <tr>
+                    <td>THR</td>
+                    <td>Year</td>
+                    <td>1</td>
+                    <td>Yess</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <br>
+          <div>
+            <div class="row">
+              <div class="form-group form-inline">
+                  <input placeholder="Nama Hero" type="text" id="addEmployee" class="form-control col-md-4">
+                  <a class="btn" role="button"><span class="glyphicon glyphicon-search"></span></a>
+                  <a class="btn btn-default">Add Employee</a>
+                </div>
+              </div>
+            <table class="table table-striped">
+              <thead style="background-color: #b6bac1">
+                <tr>
+                  <td>No</td>
+                  <td>Employee ID</td>
+                  <td>Employee Name</td>
+                  <td>Project</td>
+                  <td>Location</td>
+                  <td>Action</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>E001X2314</td>
+                  <td>Rambo Raga Perkasa</td>
+                  <td>Hero Service</td>
+                  <td>Banten</td>
+                  <td><a class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></a></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>E021D721</td>
+                  <td>Giacomo Guizzoni</td>
+                  <td>Hero Service</td>
+                  <td>Samarinda</td>
+                  <td><a class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></a></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>E007Y123</td>
+                  <td>Marco Bootn</td>
+                  <td>Hero Service</td>
+                  <td>Samarinda</td>
+                  <td><a class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></a></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>E701R887</td>
+                  <td>Mariah Maclchlan</td>
+                  <td>Hero Service</td>
+                  <td>Banten</td>
+                  <td><a class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></a></td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>E19Y231</td>
+                  <td>Valerie Liberty</td>
+                  <td>Hero Service</td>
+                  <td>Banten</td>
+                  <td><a class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></a></td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <button class="btn btn-primary" type="submit">SUBMIT</button>
+          </div>
+        </form>
+        <br>
+        <br>
+      </div>
+    </div>
+  </div>
