@@ -21,7 +21,7 @@ import { CreateAlternateComponent } from './working-schedule/create-alternate/cr
 import { ListComponent } from './working-schedule/list/list.component';
 
 
-const appRoutes : Routes = [
+const appRoutes: Routes = [
   { path: 'generate', component: GenerateComponent },
   { path: 'entry', component: EntryComponent },
   { path: 'upload', component: UploadComponent},
